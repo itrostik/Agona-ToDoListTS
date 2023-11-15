@@ -2,12 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
+    <link rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="wrapper">
+        <main class="main">
+          <div class="main__container">
+            <div class="main__addTask">
+              <form class="main__addTask-form">
+                <label class="main__addTask-label">
+                  <input
+                          type="text"
+                          class="main__addTask-input"
+                          placeholder="Добавьте задачу..."
+                  />
+                </label>
+                <button type="submit" class="main__addTask-button">
+                  <img src="/img/arrow-right.svg" alt="" />
+                </button>
+              </form>
+            </div>
+            <div class="main__tasks-info">
+              <div class="main__tasks-title">Задачи</div>
+            </div>
+            <div class="main__tasks"></div>
+          </div>
+        </main>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
